@@ -2,7 +2,7 @@ import React from "react";
 
 export const Button = ({ children, ...props }) => {
   return (
-    <button class="py-2 px-3 bg-white text-cyan-600 text-sm font-semibold rounded-md shadow-lg focus:outline-none">
+    <button class="border w-full hover:bg-neutral-100 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-neutral-400">
       {children}
     </button>
   );
