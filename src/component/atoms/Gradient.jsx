@@ -106,8 +106,8 @@ Gradient.propTypes = {
 };
 Gradient.defaultProps = {
   mode: "r",
-  fromColor: "sky",
-  fromThick: "-400",
-  toColor: "cyan",
-  toThick: "-600",
+  fromColor: "blue",
+  fromThick: "-900",
+  toColor: "violet",
+  toThick: "-950",
 };

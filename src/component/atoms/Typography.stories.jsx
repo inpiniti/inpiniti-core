@@ -1,4 +1,5 @@
 import { Typography } from "./Typography";
+import { Gradient } from "./Gradient";
 
 export default {
   title: "atoms/Typography",
@@ -7,9 +8,8 @@ export default {
   tags: ["autodocs"],
 };
 
-export const sans = {
+export const typography_default = {
   args: {
-    family: "font-sans",
     children: `나 있잖아
     너 없으면 죽을것 같애
     내 눈은 두개인데
@@ -24,164 +24,125 @@ export const sans = {
   },
 };
 
-export const serif = {
-  args: {
-    family: "font-serif",
-    children: "hellow world",
-  },
-};
+export const family = {
+  render: (args) => <Gradient className="rounded-lg shadow-xl px-6 py-8 text-white">
+    <Typography family="font-sans">font-sans hellow world</Typography>
+    <Typography family="font-serif">font-serif hellow world</Typography>
+    <Typography family="font-mono">font-mono hellow world</Typography>
+  </Gradient>
+}
 
-export const mono = {
-  args: {
-    family: "font-mono",
-    children: "hellow world",
-  },
-};
+export const textSize = {
+  render: (args) => <Gradient className="rounded-lg shadow-xl px-6 py-8 text-white">
+    <Typography size="text-mono">text-mono hellow world</Typography>
+    <Typography size="text-xs">text-xs hellow world</Typography>
+    <Typography size="text-sm">text-sm hellow world</Typography>
+    <Typography size="text-base">text-base hellow world</Typography>
+    <Typography size="text-lg">text-lg hellow world</Typography>
+    <Typography size="text-xl">text-xl hellow world</Typography>
+    <Typography size="text-2xl">text-2xl hellow world</Typography>
+    <Typography size="text-3xl">text-3xl hellow world</Typography>
+    <Typography size="text-4xl">text-4xl hellow world</Typography>
+    <Typography size="text-5xl">text-5xl hellow world</Typography>
+    <Typography size="text-6xl">text-6xl hellow world</Typography>
+    <Typography size="text-7xl">text-7xl hellow world</Typography>
+    <Typography size="text-8xl">text-8xl hellow world</Typography>
+    <Typography size="text-9xl">text-9xl hellow world</Typography>
+  </Gradient>
+}
 
-export const xs = {
-  args: {
-    size: "text-xs",
-    children: "hellow world",
-  },
-};
+export const textWeight = {
+  render: (args) => <Gradient className="rounded-lg shadow-xl px-6 py-8 text-white">
+    <Typography weight="font-thin">font-thin hellow world</Typography>
+    <Typography weight="font-extralight">font-extralight hellow world</Typography>
+    <Typography weight="font-light">font-light hellow world</Typography>
+    <Typography weight="font-normal">font-normal hellow world</Typography>
+    <Typography weight="font-medium">font-medium hellow world</Typography>
+    <Typography weight="font-semibold">font-semibold hellow world</Typography>
+    <Typography weight="font-bold">font-bold hellow world</Typography>
+    <Typography weight="font-extrabold">font-extrabold hellow world</Typography>
+    <Typography weight="font-black">font-black hellow world</Typography>
+  </Gradient>
+}
 
-export const sm = {
-  args: {
-    size: "text-sm",
-    children: "hellow world",
-  },
-};
+export const textColor = {
+  render: (args) => <Gradient className="rounded-lg shadow-xl px-6 py-8">
+    <Typography textColor="inherit">inherit hellow world</Typography>
+    <Typography textColor="current">current hellow world</Typography>
+    <Typography textColor="transparent">transparent hellow world</Typography>
+    <Typography textColor="black">black hellow world</Typography>
+    <Typography textColor="white">white hellow world</Typography>
 
-export const base = {
-  args: {
-    size: "text-base",
-    children: "hellow world",
-  },
-};
+    <Typography textColor="slate" textThick="-50">slate -50 hellow world</Typography>
+    <Typography textColor="slate" textThick="-100">slate -100 hellow world</Typography>
+    <Typography textColor="slate" textThick="-200">slate -200 hellow world</Typography>
+    <Typography textColor="slate" textThick="-300">slate -300 hellow world</Typography>
+    <Typography textColor="slate" textThick="-400">slate -400 hellow world</Typography>
+    <Typography textColor="slate" textThick="-500">slate -500 hellow world</Typography>
+    <Typography textColor="slate" textThick="-600">slate -600 hellow world</Typography>
+    <Typography textColor="slate" textThick="-700">slate -700 hellow world</Typography>
+    <Typography textColor="slate" textThick="-800">slate -800 hellow world</Typography>
+    <Typography textColor="slate" textThick="-900">slate -900 hellow world</Typography>
+    <Typography textColor="slate" textThick="-950">slate -950 hellow world</Typography>
 
-export const lg = {
-  args: {
-    size: "text-lg",
-    children: "hellow world",
-  },
-};
+    <Typography textColor="gray" textThick="-50">gray -50 hellow world</Typography>
+    <Typography textColor="gray" textThick="-100">gray -100 hellow world</Typography>
+    <Typography textColor="gray" textThick="-200">gray -200 hellow world</Typography>
+    <Typography textColor="gray" textThick="-300">gray -300 hellow world</Typography>
+    <Typography textColor="gray" textThick="-400">gray -400 hellow world</Typography>
+    <Typography textColor="gray" textThick="-500">gray -500 hellow world</Typography>
+    <Typography textColor="gray" textThick="-600">gray -600 hellow world</Typography>
+    <Typography textColor="gray" textThick="-700">gray -700 hellow world</Typography>
+    <Typography textColor="gray" textThick="-800">gray -800 hellow world</Typography>
+    <Typography textColor="gray" textThick="-900">gray -900 hellow world</Typography>
+    <Typography textColor="gray" textThick="-950">gray -950 hellow world</Typography>
 
-export const xl = {
-  args: {
-    size: "text-xl",
-    children: "hellow world",
-  },
-};
+	  <Typography textColor="zinc" textThick="-50">zinc -50 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-100">zinc -100 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-200">zinc -200 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-300">zinc -300 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-400">zinc -400 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-500">zinc -500 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-600">zinc -600 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-700">zinc -700 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-800">zinc -800 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-900">zinc -900 hellow world</Typography>
+    <Typography textColor="zinc" textThick="-950">zinc -950 hellow world</Typography>
 
-export const xl2 = {
-  args: {
-    size: "text-2xl",
-    children: "hellow world",
-  },
-};
-
-export const xl3 = {
-  args: {
-    size: "text-3xl",
-    children: "hellow world",
-  },
-};
-
-export const xl4 = {
-  args: {
-    size: "text-4xl",
-    children: "hellow world",
-  },
-};
-
-export const xl5 = {
-  args: {
-    size: "text-5xl",
-    children: "hellow world",
-  },
-};
-
-export const xl6 = {
-  args: {
-    size: "text-6xl",
-    children: "hellow world",
-  },
-};
-
-export const xl7 = {
-  args: {
-    size: "text-7xl",
-    children: "hellow world",
-  },
-};
-
-export const xl8 = {
-  args: {
-    size: "text-8xl",
-    children: "hellow world",
-  },
-};
-
-export const xl9 = {
-  args: {
-    size: "text-9xl",
-    children: "hellow world",
-  },
-};
-
-export const thin = {
-  args: {
-    weight: "font-thin",
-    children: "hellow world",
-  },
-};
-
-export const extralight = {
-  args: {
-    weight: "font-extralight",
-    children: "hellow world",
-  },
-};
-export const light = {
-  args: {
-    weight: "font-light",
-    children: "hellow world",
-  },
-};
-export const normal = {
-  args: {
-    weight: "font-normal",
-    children: "hellow world",
-  },
-};
-export const medium = {
-  args: {
-    weight: "font-medium",
-    children: "hellow world",
-  },
-};
-
-export const semibold = {
-  args: {
-    weight: "font-semibold",
-    children: "hellow world",
-  },
-};
-export const bold = {
-  args: {
-    weight: "font-bold",
-    children: "hellow world",
-  },
-};
-export const extrabold = {
-  args: {
-    weight: "font-extrabold",
-    children: "hellow world",
-  },
-};
-export const black = {
-  args: {
-    weight: "font-black",
-    children: "hellow world",
-  },
-};
+	  <Typography textColor="neutral" textThick="-50">neutral -50 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-100">neutral -100 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-200">neutral -200 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-300">neutral -300 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-400">neutral -400 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-500">neutral -500 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-600">neutral -600 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-700">neutral -700 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-800">neutral -800 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-900">neutral -900 hellow world</Typography>
+    <Typography textColor="neutral" textThick="-950">neutral -950 hellow world</Typography>
+	
+	  <Typography textColor="stone" textThick="-50">stone -50 hellow world</Typography>
+    <Typography textColor="stone" textThick="-100">stone -100 hellow world</Typography>
+    <Typography textColor="stone" textThick="-200">stone -200 hellow world</Typography>
+    <Typography textColor="stone" textThick="-300">stone -300 hellow world</Typography>
+    <Typography textColor="stone" textThick="-400">stone -400 hellow world</Typography>
+    <Typography textColor="stone" textThick="-500">stone -500 hellow world</Typography>
+    <Typography textColor="stone" textThick="-600">stone -600 hellow world</Typography>
+    <Typography textColor="stone" textThick="-700">stone -700 hellow world</Typography>
+    <Typography textColor="stone" textThick="-800">stone -800 hellow world</Typography>
+    <Typography textColor="stone" textThick="-900">stone -900 hellow world</Typography>
+    <Typography textColor="stone" textThick="-950">stone -950 hellow world</Typography>
+	
+	  <Typography textColor="red" textThick="-50">red -50 hellow world</Typography>
+    <Typography textColor="red" textThick="-100">red -100 hellow world</Typography>
+    <Typography textColor="red" textThick="-200">red -200 hellow world</Typography>
+    <Typography textColor="red" textThick="-300">red -300 hellow world</Typography>
+    <Typography textColor="red" textThick="-400">red -400 hellow world</Typography>
+    <Typography textColor="red" textThick="-500">red -500 hellow world</Typography>
+    <Typography textColor="red" textThick="-600">red -600 hellow world</Typography>
+    <Typography textColor="red" textThick="-700">red -700 hellow world</Typography>
+    <Typography textColor="red" textThick="-800">red -800 hellow world</Typography>
+    <Typography textColor="red" textThick="-900">red -900 hellow world</Typography>
+    <Typography textColor="red" textThick="-950">red -950 hellow world</Typography>
+  </Gradient>,
+}
