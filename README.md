@@ -2,9 +2,8 @@
   inpiniti 디자인 시스템
 </h1>
 <img alt="inpiniti" src="https://img.shields.io/badge/creator-inpiniti-blue.svg" />
-<img alt="0.0.2" src="https://img.shields.io/badge/version-0.0.2-blue.svg" />
+<img alt="0.0.4" src="https://img.shields.io/badge/version-0.0.4-blue.svg" />
 <img alt="tailwind" src="https://img.shields.io/badge/css-tailwind-blue.svg" />
-
 
 마크업이 매번 귀찮아서 아예 react 용으로 만들어 보았습니다.
 
