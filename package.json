@@ -1,0 +1,46 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@storybook/addon-essentials": "^7.6.4",
+    "@storybook/addon-interactions": "^7.6.4",
+    "@storybook/addon-links": "^7.6.4",
+    "@storybook/blocks": "^7.6.4",
+    "@storybook/test": "^7.6.4",
+    "@storybook/vue3": "^7.6.4",
+    "@storybook/vue3-vite": "^7.6.4",
+    "autoprefixer": "^10.4.16",
+    "leaflet": "^1.9.4",
+    "leaflet-draw": "^1.0.4",
+    "leaflet-linear-measurement": "^0.0.1",
+    "leaflet-mouse-position": "^1.2.0",
+    "nuxt": "^3.8.2",
+    "postcss": "^8.4.32",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.4",
+    "tailwindcss": "^3.3.6",
+    "unplugin-auto-import": "^0.17.2",
+    "unplugin-vue-components": "^0.26.0",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.5"
+  }
+}

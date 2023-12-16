@@ -1,0 +1,1 @@
+<template>labels-left</template>
