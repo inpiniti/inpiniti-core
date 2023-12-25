@@ -7,9 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    copy: typeof import('./components/forms/FormCehckBox copy.vue')['default']
+    copy: typeof import('./components/elements/Button copy.vue')['default']
     ElementsButton: typeof import('./components/elements/Button.vue')['default']
     ElementsLabel: typeof import('./components/elements/Label.vue')['default']
+    ElementsTab: typeof import('./components/elements/Tab.vue')['default']
+    ElementsTemp: typeof import('./components/elements/Temp.vue')['default']
     FormsFormCehckBox: typeof import('./components/forms/FormCehckBox.vue')['default']
     'FormsFormCehckBox.stories': typeof import('./components/forms/FormCehckBox.stories.vue')['default']
     FormsFormInput: typeof import('./components/forms/FormInput.vue')['default']
@@ -20,9 +22,21 @@ declare module 'vue' {
     FormsStacked: typeof import('./components/forms/Stacked.vue')['default']
     FormsTowColumn: typeof import('./components/forms/TowColumn.vue')['default']
     FormsTowColumnCards: typeof import('./components/forms/TowColumnCards.vue')['default']
+    HeadingsHeader: typeof import('./components/headings/Header.vue')['default']
     HeadingsHeadingMetaActions: typeof import('./components/headings/HeadingMetaActions.vue')['default']
+    HeadingsPageHeader: typeof import('./components/headings/PageHeader.vue')['default']
+    LayoutBasicLayout: typeof import('./components/layout/BasicLayout.vue')['default']
+    LayoutHtmlLayout: typeof import('./components/layout/HtmlLayout.vue')['default']
     MapMap: typeof import('./components/map/Map.vue')['default']
+    NavButton: typeof import('./components/nav/Button.vue')['default']
+    NavNav: typeof import('./components/nav/Nav.vue')['default']
+    NavNavItem: typeof import('./components/nav/NavItem.vue')['default']
+    NavTab: typeof import('./components/nav/Tab.vue')['default']
+    NavTabs: typeof import('./components/nav/Tabs.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ShellSidebar: typeof import('./components/shell/sidebar.vue')['default']
+    ShellSidebarLayout: typeof import('./components/shell/SidebarLayout.vue')['default']
+    TableTable: typeof import('./components/table/Table.vue')['default']
   }
 }

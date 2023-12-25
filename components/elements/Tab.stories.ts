@@ -1,11 +1,11 @@
 // Replace your-framework with the name of your framework
 import type { Meta, StoryObj } from "@storybook/vue3";
 
-import Button from "./Button.vue";
+import Tab from "./Tab.vue";
 
-const meta: Meta<typeof Button> = {
-  title: "elements/Button",
-  component: Button,
+const meta: Meta<typeof Tab> = {
+  title: "elements/Tab",
+  component: Tab,
   argTypes: {
     color: {
       type: "select",
@@ -42,13 +42,12 @@ const meta: Meta<typeof Button> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof Tab>;
 
 export const fish: Story = {
   args: {
     icon: "fish",
     label: "fish",
-    isSearch: true,
   },
 };
 
@@ -57,6 +56,7 @@ export const anchorDark: Story = {
     icon: "anchor",
     label: "anchorDark",
     dark: true,
+    count: 5,
   },
 };
 
